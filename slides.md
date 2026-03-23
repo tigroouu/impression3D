@@ -219,7 +219,7 @@ Logiciel de conception paramétrique open-source, idéal pour l'ingénierie sans
 
 ## Type de résine
 
----
+--- 
 
 ## Outil de découpage
 
@@ -248,7 +248,7 @@ layout: default
     <span style="font-size: 2.2rem; margin-right: 20px;">🌱</span>
     <div style="flex-grow: 1;">
       <h3 style="color: #4ade80; margin: 0; font-size: 1.1rem;">PLA (Acide Polylactique)</h3>
-      <p style="margin: 0; font-size: 0.8rem;"><b>Usages :</b> Figurines, prototypes rapides, maquettes d'architecture, boîtes de rangement.</p>
+      <p style="margin: 0; font-size: 0.8rem;"><b>Usages : </b> Figurines, prototypes rapides, maquettes d'architecture, boîtes de rangement.</p>
     </div>
     <div style="font-family: monospace; font-size: 0.75rem; text-align: right; border-left: 1px solid #22c55e; padding-left: 15px; min-width: 140px;">
       Buse : <b>190-220°C</b><br>Plateau : <b>40-60°C</b>
