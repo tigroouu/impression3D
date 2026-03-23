@@ -1,8 +1,7 @@
 name: Deploy Slides
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
   deploy:
@@ -12,12 +11,13 @@ jobs:
       
       - uses: actions/setup-node@v4
         with:
-          node-version: '24' # On passe à la version 24 pour stopper l'alerte
+          node-version: '24'
           
       - name: Install Dependencies
         run: npm install
 
       - name: Build Slides
+        # Ici on ajoute "slides.md" explicitement pour éviter la page par défaut
         run: npx slidev build slides.md --base /impression3D/
 
       - name: Deploy to GitHub Pages
