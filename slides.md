@@ -30,6 +30,7 @@ transition: slide-up
 
 ---
 layout: default
+class: dark
 ---
 
 # L'Impression 3D : C'est quoi ?
@@ -219,8 +220,56 @@ layout: default
 </div>
 
 ---
+layout: default
+---
 
 # Outils de Modélisation
+
+<div class="grid grid-cols-5 items-center mt-10">
+
+  <div v-click="1" class="text-center">
+    <div class="bg-gray-700/30 p-4 rounded-xl border border-white/10">
+      <img src="/assets/images/concept_2d.png" class="h-50 mx-auto object-contain" />
+    </div>
+    <p class="mt-2 text-blue-400 font-bold">1. Design 2D Initial</p>
+  </div>
+
+  <div v-click="2" class="text-center text-5xl text-gray-500 animate-pulse">
+    ➔
+  </div>
+
+  <div v-click="3" class="text-center">
+    <div class="bg-gray-700/30 p-4 rounded-xl border border-white/10">
+      <img src="/assets/images/esquisse.png" class="h-50 mx-auto object-contain" />
+    </div>
+    <p class="mt-2 text-purple-400 font-bold">2. Esquisse</p>
+  </div>
+
+  <div v-click="4" class="text-center text-5xl text-gray-500 animate-pulse">
+    ➔
+  </div>
+
+  <div v-click="5" class="text-center">
+    <div class="bg-gray-700/30 p-4 rounded-xl border border-white/10">
+      <img src="/assets/images/modele_3d.png" class="h-50 mx-auto object-contain" />
+    </div>
+    <p class="mt-2 text-purple-400 font-bold">2. Rendu 3D CAO</p>
+  </div>
+
+</div>
+<div v-click="6" class="mt-6 p-3 bg-blue-900/20 rounded-lg border border-blue-500/20 text-center">
+  <p class="text-gray-300 text-xs italic">💡 C'est le passage indispensable de l'esquisse conceptuelle 2D au modèle CAO 3D complet pour l'impression.</p>
+</div>
+
+<style>
+@keyframes bounce-x {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(5px); }
+}
+.animate-bounce-x {
+  animation: bounce-x 1s infinite;
+}
+</style>
 
 ---
 
@@ -306,12 +355,98 @@ Logiciel de conception paramétrique open-source, idéal pour l'ingénierie sans
 ---
 
 # L'impresion résine
+*La stéréolithographie : précision microscopique*
+
+<div class="pt-4 text-gray-300">
+	<img src="/assets/images/resine.jpg" class="h-100 mx-auto object-contain" />
+</div>
 
 ---
+
 ## Fonctionnement de l'impression
+
+
+---
+layout: default
 ---
 
-## Type de résine
+## Le Workflow Résine : <span class="text-red-400">Attention, ça tache !</span>
+
+<div class="grid grid-cols-4 gap-4 mt-8 px-4">
+
+  <div v-click="1" class="text-center">
+    <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 w-40 h-40 mx-auto flex flex-col items-center justify-center shadow-lg">
+      <div class="text-5xl mb-3">🧤</div>
+      <div class="font-bold text-gray-200 text-sm">1. Préparation</div>
+    </div>
+    <p class="text-[10px] text-gray-400 mt-2 px-2">Gants & Masque obligatoires. La résine est toxique avant cuisson.</p>
+  </div>
+
+  <div v-click="2" class="text-center">
+    <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 w-40 h-40 mx-auto flex flex-col items-center justify-center shadow-lg border-b-4 border-b-purple-500">
+      <div class="text-5xl mb-3">🏗️</div>
+      <div class="font-bold text-purple-200 text-sm">2. Impression</div>
+    </div>
+    <p class="text-[10px] text-gray-400 mt-2 px-2">Le plateau descend dans le bac, la lumière UV projette l'image.</p>
+  </div>
+
+  <div v-click="3" class="text-center">
+    <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 w-40 h-40 mx-auto flex flex-col items-center justify-center shadow-lg border-b-4 border-b-blue-500">
+      <div class="text-5xl mb-3">🧼</div>
+      <div class="font-bold text-blue-200 text-sm">3. Nettoyage</div>
+    </div>
+    <p class="text-[10px] text-gray-400 mt-2 px-2">Bain d'Alcool Isopropylique (IPA) pour enlever la résine non-durcie.</p>
+  </div>
+
+  <div v-click="4" class="text-center">
+    <div class="bg-gray-800/50 p-4 rounded-xl border border-gray-700 w-40 h-40 mx-auto flex flex-col items-center justify-center shadow-lg border-b-4 border-b-green-500">
+      <div class="text-5xl mb-3">☀️</div>
+      <div class="font-bold text-green-200 text-sm">4. Curing</div>
+    </div>
+    <p class="text-[10px] text-gray-400 mt-2 px-2">Exposition finale aux UV pour durcir la pièce à cœur.</p>
+  </div>
+
+</div>
+
+---
+
+## Guide  des Résines
+
+<div class="space-y-3 mt-4 max-w-2xl mx-auto">
+
+  <div v-click="1" class="flex items-center bg-purple-500/10 border border-purple-500/30 rounded-lg p-1 shadow-lg">
+    <span class="text-4xl mr-5">🛡️</span>
+    <div class="flex-grow">
+      <h3 class="text-purple-300 font-bold m-0 text-sm uppercase">Standard / Eco</h3>
+      <p class="m-0 text-[11px] text-gray-300">La plus courante. Cassante comme du verre. Bio-sourcée (Soja) pour moins d'odeur.</p>
+    </div>
+  </div>
+
+  <div v-click="2" class="flex items-center bg-blue-500/10 border border-blue-500/30 rounded-lg p-1 shadow-lg">
+    <span class="text-4xl mr-5">👟</span>
+    <div class="flex-grow">
+      <h3 class="text-blue-300 font-bold m-0 text-sm uppercase">Flexible / Élastique</h3>
+      <p class="m-0 text-[11px] text-gray-300">Propriétés proches du caoutchouc. Pour joints, coques, amortisseurs.</p>
+    </div>
+  </div>
+
+  <div v-click="3" class="flex items-center bg-red-500/10 border border-red-500/30 rounded-lg p-1 shadow-lg">
+    <span class="text-4xl mr-5">🧱</span>
+    <div class="flex-grow">
+      <h3 class="text-red-300 font-bold m-0 text-sm uppercase">Tough / ABS-Like</h3>
+      <p class="m-0 text-[11px] text-gray-300">Plus résistante aux chocs et à la flexion que la standard. Pièces fonctionnelles.</p>
+    </div>
+  </div>
+
+  <div v-click="4" class="flex items-center bg-green-500/10 border border-green-500/30 rounded-lg p-1 shadow-lg hover:scale-105 transition-transform">
+    <span class="text-4xl mr-5">💧</span>
+    <div class="flex-grow">
+      <h3 class="text-green-300 font-bold m-0 text-sm uppercase">Water Washable</h3>
+      <p class="m-0 text-[11px] text-gray-300 font-bold text-green-100">Plus besoin d'Alcool ! Se nettoie simplement à l'eau.</p>
+    </div>
+  </div>
+
+</div>
 
 ---
 
@@ -382,7 +517,7 @@ layout: default
     </div>
   </div>
 
-  <div v-click="5" style="display: flex; align-items: center; background: rgba(168, 85, 247, 0.08); border: 1px solid #ef4444; border-radius: 10px; padding: 8px 20px;">
+  <div v-click="5" style="display: flex; align-items: center; background: rgba(168, 85, 247, 0.08); border: 1px solid #c084fc; border-radius: 10px; padding: 8px 20px;">
     <span style="font-size: 2.2rem; margin-right: 20px;">⚙️</span>
     <div style="flex-grow: 1;">
       <h3 style="color: #c084fc; margin: 0; font-size: 1.1rem;">Nylon (Polyamide)</h3>
