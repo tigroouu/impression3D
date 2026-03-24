@@ -42,6 +42,9 @@ layout: default
     <h2 class="text-lg font-bold text-red-400">Soustractif</h2>
     <p class="text-[13px] leading-tight text-gray-300">On <b>taille ou coupe</b> un bloc de matière. Génère beaucoup de déchets.</p>
     <p class="text-[11px] mt-2 text-gray-500 italic">Ex: Sculpture, Fraisage CNC.</p>
+	<div class="mt-3 flex justify-center">
+      <img src="https://www.gifsanimes.com/data/media/1816/sculpteur-image-animee-0015.gif" class="h-28 rounded-lg shadow-inner object-contain" alt="sculpture" />
+    </div>
   </div>
 
   <div v-click="2" class="bg-gray-800/50 p-4 rounded-xl border border-green-500/20 shadow-md border-l-4">
@@ -49,12 +52,11 @@ layout: default
     <h2 class="text-lg font-bold text-green-400">Additif (3D)</h2>
     <p class="text-[13px] leading-tight text-gray-300">On <b>ajoute de la matière</b> couche par couche. Très peu de gaspillage.</p>
     <p class="text-[11px] mt-2 text-gray-500 italic">Ex: Dépôt de fil, Résine.</p>
+	<div class="mt-3 flex justify-center">
+      <img src="https://www.norck.fr/cdn/shop/files/Fused_Deposition_Modeling.gif?v=1670227182" class="h-28 rounded-lg shadow-inner object-contain" alt="3d printing" />
+    </div>
   </div>
 
-</div>
-
-<div v-click="3" class="mt-6 p-3 bg-blue-900/20 rounded-lg border border-blue-500/20 text-center">
-  <p class="text-blue-300 text-xs">💡 <b>Le saviez-vous ?</b> C'est comme un pistolet à colle piloté par ordinateur.</p>
 </div>
 
 ---
