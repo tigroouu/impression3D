@@ -29,17 +29,109 @@ transition: slide-up
 <Toc text-sm minDepth="1" maxDepth="2" />
 
 ---
-transition: fade-out
+layout: default
 ---
 
-## Qu'est-ce que l'impression 3D ?
+# L'Impression 3D : C'est quoi ?
+<p class="text-gray-400 text-xs italic">De l'idée à l'objet physique en quelques clics.</p>
 
-L'impression 3D, ou **fabrication additive**, consiste à créer des objets réels par superposition de couches successives.
+<div class="grid grid-cols-2 gap-4 mt-4">
+  
+  <div v-click="1" class="bg-gray-800/50 p-4 rounded-xl border border-red-500/20 shadow-md">
+    <div class="text-2xl mb-1 text-red-400"><carbon-cut /></div>
+    <h2 class="text-lg font-bold text-red-400">Soustractif</h2>
+    <p class="text-[13px] leading-tight text-gray-300">On <b>taille ou coupe</b> un bloc de matière. Génère beaucoup de déchets.</p>
+    <p class="text-[11px] mt-2 text-gray-500 italic">Ex: Sculpture, Fraisage CNC.</p>
+  </div>
 
-* **Soustraction (Traditionnel):** On part d'un bloc et on enlève de la matière (usinage).
-* **Addition (3D):** On dépose uniquement la matière nécessaire.
+  <div v-click="2" class="bg-gray-800/50 p-4 rounded-xl border border-green-500/20 shadow-md border-l-4">
+    <div class="text-2xl mb-1 text-green-400"><carbon-add-alt /></div>
+    <h2 class="text-lg font-bold text-green-400">Additif (3D)</h2>
+    <p class="text-[13px] leading-tight text-gray-300">On <b>ajoute de la matière</b> couche par couche. Très peu de gaspillage.</p>
+    <p class="text-[11px] mt-2 text-gray-500 italic">Ex: Dépôt de fil, Résine.</p>
+  </div>
 
-> "L'impression 3D permet de passer du bit à l'atome en quelques heures."
+</div>
+
+<div v-click="3" class="mt-6 p-3 bg-blue-900/20 rounded-lg border border-blue-500/20 text-center">
+  <p class="text-blue-300 text-xs">💡 <b>Le saviez-vous ?</b> C'est comme un pistolet à colle piloté par ordinateur.</p>
+</div>
+
+---
+layout: default
+---
+
+# Un peu d'histoire... 🕰️
+<p class="text-gray-400 text-xs mb-2 italic">Une technologie qui a mûri dans l'ombre en 3 dates.</p>
+
+<div class="grid grid-cols-1 gap-3">
+
+  <div v-click="1" class="bg-gray-800/60 p-3 rounded-xl border-l-4 border-blue-500 shadow-lg flex items-center gap-4">
+    <div class="bg-blue-500/10 p-2 rounded-lg border border-blue-500/30 text-xl font-black text-blue-400 w-16 text-center">1984</div>
+    <div>
+      <h3 class="text-md font-bold text-blue-100 leading-none mb-1">Invention Française 🇫🇷 <span class="text-lg">🐓</span></h3>
+      <p class="text-[13px] leading-tight text-gray-300">1er brevet déposé par 3 ingénieurs français. Abandonné car jugé <b>"sans avenir"</b> par leurs entreprises.</p>
+    </div>
+  </div>
+
+  <div v-click="2" class="bg-gray-800/60 p-3 rounded-xl border-l-4 border-purple-500 shadow-lg flex items-center gap-4">
+    <div class="bg-purple-500/10 p-2 rounded-lg border border-purple-500/30 text-xl font-black text-purple-400 w-16 text-center">1986</div>
+    <div>
+      <h3 class="text-md font-bold text-purple-100 leading-none mb-1">Chuck Hull (SLA)</h3>
+      <p class="text-[13px] leading-tight text-gray-300">Brevète la <b>résine</b> aux USA et fonde <b>3D Systems</b>. C'est le début industriel de l'impression 3D.</p>
+    </div>
+  </div>
+
+  <div v-click="3" class="bg-gray-800/60 p-3 rounded-xl border-l-4 border-orange-500 shadow-lg flex items-center gap-4">
+    <div class="bg-orange-500/10 p-2 rounded-lg border border-orange-500/30 text-xl font-black text-orange-400 w-16 text-center">2005</div>
+    <div>
+      <h3 class="text-md font-bold text-orange-100 leading-none mb-1">Projet RepRap</h3>
+      <p class="text-[13px] leading-tight text-gray-300">L'imprimante <b>auto-réplicante</b> et l'open-source. C'est ce qui a permis d'avoir des imprimantes chez nous.</p>
+    </div>
+  </div>
+
+</div>
+
+---
+layout: default
+---
+
+# Le Projet RepRap : La Révolution 🧬
+<p class="text-gray-400 text-sm mb-4 italic text-center">"Wealth without money" — Adrian Bowyer (2005)</p>
+
+<div class="grid grid-cols-2 gap-6 mt-4">
+
+  <div v-click="1" class="bg-gray-800/50 p-5 rounded-2xl border-t-4 border-orange-500 shadow-xl">
+    <div class="flex items-center gap-3 mb-3 text-orange-400">
+      <carbon-renew class="text-3xl" />
+      <h2 class="text-xl font-bold text-white">L'Auto-Réplication</h2>
+    </div>
+    <p class="text-[14px] leading-relaxed text-gray-300">
+      L'objectif était de créer une machine capable de <b>fabriquer ses propres pièces</b>. 
+      <br><br>
+      Si vous avez une RepRap, vous pouvez en "imprimer" une autre pour un ami. La technologie se diffuse comme un organisme biologique.
+    </p>
+  </div>
+
+  <div v-click="2" class="bg-gray-800/50 p-5 rounded-2xl border-t-4 border-green-500 shadow-xl">
+    <div class="flex items-center gap-3 mb-3 text-green-400">
+      <carbon-network-4 class="text-3xl" />
+      <h2 class="text-xl font-bold text-white">L'Héritage Open-Source</h2>
+    </div>
+    <ul class="text-[13px] space-y-2 text-gray-300">
+      <li><b class="text-green-300">Démocratisation :</b> Passage de machines à 30 000€ à des kits à 200€.</li>
+      <li><b class="text-green-300">Standardisation :</b> Naissance des logiciels (Marlin, Cura) et du format de filament 1.75mm.</li>
+      <li><b class="text-green-300">Les Géants :</b> Sans RepRap, <b>Prusa</b> et <b>Creality</b> n'existeraient pas.</li>
+    </ul>
+  </div>
+
+</div>
+
+<div v-click="3" class="mt-8 p-4 bg-orange-900/10 border border-orange-500/20 rounded-xl text-center">
+  <p class="text-sm text-orange-200">
+    🚀 <b>En résumé :</b> C'est le passage de l'impression 3D "industrielle" à l'impression 3D "domestique".
+  </p>
+</div>
 
 ---
 layout: default
@@ -95,7 +187,7 @@ layout: default
   <div v-click="1" class="bg-gray-700/50 p-5 rounded-xl border border-gray-600 w-48 shadow-lg">
       <div class="text-4xl mb-3">📐</div>
       <div class="font-bold text-lg">1. Conception</div>
-      <div class="text-sm text-gray-400">Modélisation CAO<br>(Fusion, Blender)</div>
+      <div class="text-sm text-black-400">Modélisation CAO<br>(Fusion, Blender)</div>
     </div>
 
   <div v-click="2" class="text-2xl text-gray-500 flex-shrink-0">➔</div>
@@ -103,7 +195,7 @@ layout: default
   <div v-click="2" class="bg-gray-700/50 p-5 rounded-xl border border-gray-600 w-48 shadow-lg">
       <div class="text-4xl mb-3">📤</div>
       <div class="font-bold text-lg">2. Export</div>
-      <div class="text-sm text-gray-400">Fichier 3D<br>(.STL, .OBJ, .3MF)</div>
+      <div class="text-sm text-black-400">Fichier 3D<br>(.STL, .OBJ, .3MF)</div>
     </div>
 
   <div v-click="3" class="text-2xl text-gray-500 flex-shrink-0">➔</div>
@@ -111,7 +203,7 @@ layout: default
   <div v-click="3" class="bg-gray-700/50 p-5 rounded-xl border border-gray-600 w-48 shadow-lg">
       <div class="text-4xl mb-3">🍰</div>
       <div class="font-bold text-lg">3. Slicing</div>
-      <div class="text-sm text-gray-400">Découpe G-Code<br>(Prusa, Cura)</div>
+      <div class="text-sm text-black-400">Découpe G-Code<br>(Prusa, Cura)</div>
     </div>
 
   <div v-click="4" class="text-2xl text-gray-500 flex-shrink-0">➔</div>
@@ -119,7 +211,7 @@ layout: default
   <div v-click="4" class="bg-gray-700/50 p-5 rounded-xl border border-gray-600 w-48 shadow-lg">
       <div class="text-4xl mb-3">🖨️</div>
       <div class="font-bold text-lg">4. Impression</div>
-      <div class="text-sm text-gray-400">Fabrication<br>(FDM / Résine)</div>
+      <div class="text-sm text-black-400">Fabrication<br>(FDM / Résine)</div>
     </div>
 
 </div>
@@ -219,7 +311,7 @@ Logiciel de conception paramétrique open-source, idéal pour l'ingénierie sans
 
 ## Type de résine
 
---- 
+---
 
 ## Outil de découpage
 
