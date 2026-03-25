@@ -276,34 +276,18 @@ layout: default
 class: dark
 ---
 
-# Timelapse : L'Impression en Accéléré 🚀
+# Modélisation d'un Gippon 🚀
 
-<div class="flex flex-col items-center justify-center mt-6 p-6 bg-black/30 rounded-3xl border border-white/5 shadow-2xl">
+<div class="flex flex-col items-center justify-center mt-4">
   
-  <div class="relative p-1 bg-gradient-to-r from-blue-600 via-purple-500 to-blue-600 rounded-2xl shadow-[0_0_50px_rgba(59,130,246,0.25)]">
+  <div class="relative p-1 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.2)]">
     
-    <video 
-      id="timelapseVideo"
-      controls 
-      autoplay 
-      muted 
-      loop 
-      class="w-full max-w-3xl rounded-xl shadow-inner border border-white/10"
-    >
-      <source src="/assets/image/creation_gippon.mp4" type="video/mp4" />
+<video id="timelapseVideo" controls autoplay muted loop class="w-full max-w-2xl rounded-xl">
+      <source src="/assets/images/creation_gippon.mp4" type="video/mp4" />
       Votre navigateur ne supporte pas la vidéo.
     </video>
 
-    <div class="absolute top-4 right-4 bg-red-600 text-white text-xs font-black px-3 py-1.5 rounded-full shadow-lg animate-pulse uppercase tracking-widest">
-      Vitesse x8
-    </div>
-
   </div>
-
-  <p v-click="1" class="mt-8 text-sm text-center text-blue-300 italic px-6 py-3 bg-blue-500/10 rounded-full border border-blue-500/20 max-w-2xl">
-    💡 **Démonstration :** Une impression de 4 heures résumée en seulement 30 secondes. Remarquez la vitesse de déplacement de la tête d'impression.
-  </p>
-
 </div>
 
 <script setup>
