@@ -273,7 +273,7 @@ layout: default
 
 ---
 
-## 🏗️ Fusion 3601 (Autodesk)
+## 🏗️ Fusion 360 (Autodesk)
 *Le standard industriel "Cloud-Native"*
 
 
