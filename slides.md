@@ -253,7 +253,7 @@ layout: default
     <div class="bg-gray-700/30 p-4 rounded-xl border border-white/10">
       <img src="/assets/images/modele_3d.png" class="h-50 mx-auto object-contain" />
     </div>
-    <p class="mt-2 text-purple-400 font-bold">2. Rendu 3D CAO</p>
+    <p class="mt-2 text-purple-400 font-bold">3. Rendu 3D CAO</p>
   </div>
 
 </div>
@@ -449,6 +449,34 @@ layout: default
 </div>
 
 ---
+layout: default
+---
+
+## Résumé : La Résine est-elle pour vous ?
+
+<div class="grid grid-cols-2 gap-6 mt-8 px-6">
+
+  <div v-click="1" class="bg-gray-800 p-6 rounded-3xl border-2 border-green-500/30 shadow-[0_0_20px_rgba(34,197,94,0.05)]">
+    <h2 class="text-3xl font-bold text-green-400 text-center mb-6">✅ Avantages</h2>
+    <ul class="text-sm space-y-4 text-gray-200">
+      <li>💎 **Détails infinis :** Parfait pour figurines, bijoux, dentaire.</li>
+      <li>✨ **Surface lisse :** Pas de lignes de couches visibles à l'œil nu.</li>
+      <li>🚀 **Vitesse (MSLA) :** Temps constant par couche.</li>
+    </ul>
+  </div>
+
+  <div v-click="2" class="bg-gray-800 p-6 rounded-3xl border-2 border-red-500/30 shadow-[0_0_20px_rgba(239,68,68,0.05)]">
+    <h2 class="text-3xl font-bold text-red-400 text-center mb-6">❌ Inconvénients</h2>
+    <ul class="text-sm space-y-4 text-gray-200">
+      <li>☣️ **Toxicité & Odeur :** Nécessite protection et ventilation.</li>
+      <li>🛠️ **Post-traitement lourd :** Nettoyage et Curing obligatoires.</li>
+      <li>🧪 **Matériau fragile :** La résine standard est très cassante.</li>
+    </ul>
+  </div>
+
+</div>
+
+---
 
 ## Outil de découpage
 
@@ -456,20 +484,62 @@ layout: default
 
 ## Timelapse
 
+<div class="flex flex-col items-center justify-center mt-4">
+  
+  <div class="relative p-1 bg-gradient-to-tr from-blue-500 to-purple-500 rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.2)]">
+    
+<video 
+      controls 
+      autoplay 
+      muted 
+      loop 
+      class="w-full max-w-2xl rounded-xl"
+    >
+      <source src="https://packaged-media.redd.it/j1b91ntgckb91/pb/m2-res_360p.mp4?m=DASHPlaylist.mpd&var=sgpssan&v=1&e=1774414800&s=f689a1c9b8b781b718f54c350f92eea93ac60f47" type="video/mp4" />
+    </video>
+</div>
+</div>
+
 ---
 
 # L'impresion filaire
+*Fused Deposition Modeling : Le dépôt de fil fondu*
+
+<div class="pt-4 text-gray-300">
+	<img src="/assets/images/resine.jpg" class="h-100 mx-auto object-contain" />
+</div>
 
 ---
 
 ## Fonctionnement de l'impression
 
+<div class="grid grid-cols-2 gap-6 mt-6 px-4">
+
+  <div v-click="1" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-orange-500 shadow-xl">
+    <h3 class="text-orange-400 font-bold mb-2 flex items-center gap-2">⚙️ L'Extrudeur</h3>
+    <p class="text-[12px] text-gray-300">
+      C'est le "moteur". Il pousse le fil vers la tête d'impression.
+      <br><br>
+      <span class="text-[10px] text-gray-500 italic">Types : Bowden (déporté) ou Direct Drive (sur la tête).</span>
+    </p>
+  </div>
+
+  <div v-click="2" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-blue-500 shadow-xl">
+    <h3 class="text-blue-400 font-bold mb-2 flex items-center gap-2">🌡️ Le Hotend & Buse</h3>
+    <p class="text-[12px] text-gray-300">
+      L'endroit où la magie opère. La buse (souvent 0.4mm) dépose le plastique avec précision.
+      <br><br>
+      <span class="text-[10px] text-gray-500 italic">Matériaux : Laiton (standard) ou Acier trempé (carbone).</span>
+    </p>
+  </div>
+
+</div>
+
 ---
 layout: default
 ---
 
-# Guide des Matériaux (FDM)
-### Propriétés, Températures et Applications Réelles
+## Guide des Matériaux (FDM)
 
 <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 5px;">
 
@@ -531,6 +601,35 @@ layout: default
 </div>
 
 ---
+layout: default
+---
+
+## Résumé : Le filaire est-elle pour vous ?
+
+<div class="grid grid-cols-2 gap-6 mt-8 px-6">
+
+  <div v-click="1" class="bg-gray-800 p-5 rounded-3xl border-2 border-green-500/30 shadow-[0_0_20px_rgba(34,197,94,0.05)]">
+    <h2 class="text-2xl font-bold text-green-400 text-center mb-4">✅ Avantages</h2>
+    <ul class="text-xs space-y-3 text-gray-200">
+      <li>💰 **Coût :** Machines et matériaux très abordables.</li>
+      <li>🛠️ **Volume :** Permet d'imprimer de très grandes pièces.</li>
+      <li>🌈 **Diversité :** PLA, PETG, ABS, Bois, Carbone, Flex...</li>
+      <li>🧼 **Propreté :** Pas de produits chimiques ou de gants.</li>
+    </ul>
+  </div>
+
+  <div v-click="2" class="bg-gray-800 p-5 rounded-3xl border-2 border-red-500/30 shadow-[0_0_20px_rgba(239,68,68,0.05)]">
+    <h2 class="text-2xl font-bold text-red-400 text-center mb-4">❌ Inconvénients</h2>
+    <ul class="text-xs space-y-3 text-gray-200">
+      <li>➰ **Esthétique :** Les stries (couches) sont visibles.</li>
+      <li>📐 **Géométrie :** Nécessite souvent des "supports" pour le vide.</li>
+      <li>⏱️ **Vitesse :** Plus il y a de détails, plus c'est lent.</li>
+    </ul>
+  </div>
+
+</div>
+
+---
 
 ## Outil de découpage
 
@@ -541,6 +640,11 @@ layout: default
 ---
 
 # H2C, l'imprimante IPPON
+
+
+<div class="pt-4 text-gray-300">
+	<img src="/assets/images/H2C.jpg" class="h-100 mx-auto object-contain" />
+</div>
 
 ---
 
