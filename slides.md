@@ -10,7 +10,7 @@ transition: slide-left
 title: L'Impression 3D - Du Prototype à la Révolution
 ---
 
-# L'Impression 3D
+# L'Impression 3D pour les blaireaux d'Ippon
 ## La fabrication additive au service de l'innovation
 
 <div class="pt-12">
