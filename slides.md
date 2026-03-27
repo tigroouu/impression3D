@@ -10,7 +10,7 @@ transition: slide-left
 title: L'Impression 3D - Du Prototype à la Révolution
 ---
 
-# L'Impression 3D pour les blaireaux d'Ippon
+# L'Impression 3D
 ## La fabrication additive au service de l'innovation
 
 <div class="pt-12">
@@ -379,10 +379,34 @@ Logiciel de conception paramétrique open-source, idéal pour l'ingénierie sans
 - ❌ **Apprentissage rude** : Demande de la rigueur et de la patience.
 </div>
 </div>
+
+---
+layout: default
 ---
 
-## Outil IA
+# 🤖 IA & Impression 3D
+*Du prompt au modèle physique*
 
+<div class="grid grid-cols-2 gap-10 mt-6">
+<div>
+
+**1. Idée & Génération**
+- **Concepts** : Gemini / GPT pour brainstormer des designs.
+- **Text/Image to 3D** : Meshy, Tripo ou MakerWorld (dans Bambu Studio) pour créer le volume.
+- **-> Avantage** : Création de formes complexes sans savoir modéliser.
+</div>
+<div>
+
+**2. Retravail & Slicing**
+- **Nettoyage** : Blender ou Meshmixer pour corriger le maillage de l'IA.
+- **Slicing** : Bambu Studio pour l'optimisation des supports par IA.
+- **-> Avantage** : Garantit une impression propre et sans échecs.
+</div>
+</div>
+
+<div class="mt-12 text-center text-xs opacity-50 border-t border-gray-700 pt-4">
+L'IA comme levier pour briser la barrière technique de la modélisation.
+</div>
 ---
 
 # L'impresion résine
@@ -541,28 +565,80 @@ layout: default
 </div>
 
 ---
+layout: default
+---
 
-## Fonctionnement de l'impression
+# 🏗️ La Structure Mécanique
+*Le squelette et les muscles de l'imprimante*
 
-<div class="grid grid-cols-2 gap-6 mt-6 px-4">
+<div class="grid grid-cols-2 gap-8 mt-4 px-4 items-center">
+
+<div class="flex flex-col gap-4">
 
   <div v-click="1" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-orange-500 shadow-xl">
-    <h3 class="text-orange-400 font-bold mb-2 flex items-center gap-2">⚙️ L'Extrudeur</h3>
-    <p class="text-[12px] text-gray-300">
-      C'est le "moteur". Il pousse le fil vers la tête d'impression.
-      <br><br>
-      <span class="text-[10px] text-gray-500 italic">Types : Bowden (déporté) ou Direct Drive (sur la tête).</span>
+    <h3 class="text-orange-400 font-bold mb-1 flex items-center gap-2 text-sm">⚙️ Châssis & Axes</h3>
+    <p class="text-[12px] text-gray-300 leading-relaxed">
+      Structure rigide supportant les guides (X, Y, Z) et les moteurs pas à pas.
+    </p>
+    <p class="text-[10px] text-gray-300 italic mt-2">
+      Précision : Les moteurs suivent les trajectoires du slicer.
     </p>
   </div>
 
   <div v-click="2" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-blue-500 shadow-xl">
-    <h3 class="text-blue-400 font-bold mb-2 flex items-center gap-2">🌡️ Le Hotend & Buse</h3>
-    <p class="text-[12px] text-gray-300">
-      L'endroit où la magie opère. La buse (souvent 0.4mm) dépose le plastique avec précision.
-      <br><br>
-      <span class="text-[10px] text-gray-500 italic">Matériaux : Laiton (standard) ou Acier trempé (carbone).</span>
+    <h3 class="text-blue-400 font-bold mb-1 flex items-center gap-2 text-sm">🟦 Le Plateau (Bed)</h3>
+    <p class="text-[12px] text-gray-300 leading-relaxed">
+      Surface de construction souvent chauffante pour favoriser l'adhérence.
+    </p>
+    <p class="text-[10px] text-gray-300 italic mt-2">
+      Aide : Le nivellement (levelling) est crucial pour la 1ère couche.
     </p>
   </div>
+
+</div>
+
+<div class="flex justify-center">
+  <img src="/assets/images/3D-printer-parts.webp" class="rounded-lg h-70 object-contain shadow-2xl" />
+</div>
+
+</div>
+
+---
+layout: default
+---
+
+# 🌡️ Extrusion & Électronique
+*Le cœur de la dépose et le cerveau de commande*
+
+<div class="grid grid-cols-2 gap-8 mt-4 px-4 items-center">
+
+<div class="flex flex-col gap-4">
+
+  <div v-click="1" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-orange-500 shadow-xl">
+    <h3 class="text-orange-400 font-bold mb-1 flex items-center gap-2 text-sm">🔥 Tête d'impression</h3>
+    <p class="text-[12px] text-gray-300 leading-relaxed">
+      L'extrudeur pousse le fil vers le hotend pour le fondre et le déposer via la buse.
+    </p>
+    <p class="text-[10px] text-gray-300 italic mt-2">
+      Buse : Standard 0.4mm pour un équilibre vitesse/détail.
+    </p>
+  </div>
+
+  <div v-click="2" class="bg-gray-800/60 p-4 rounded-2xl border-t-4 border-green-500 shadow-xl">
+    <h3 class="text-green-400 font-bold mb-1 flex items-center gap-2 text-sm">🧠 Électronique</h3>
+    <p class="text-[12px] text-gray-300 leading-relaxed">
+      La carte mère interprète le <b>G-code</b> et régule les températures via capteurs.
+    </p>
+    <p class="text-[10px] text-gray-300 italic mt-2">
+      Fichier : Le G-code contient chaque coordonnée de mouvement.
+    </p>
+  </div>
+
+</div>
+
+<div class="flex justify-center">
+  <img src="/assets/images/3D-printer-parts.webp" class="rounded-lg h-70 object-contain shadow-2xl" />
+</div>
 
 </div>
 
@@ -668,6 +744,9 @@ layout: default
 
 ## Timelapse
 
+<div class="flex justify-center">
+  <img src="/assets/images/timelapse_filaire.gif" class="rounded-lg h-70 object-contain shadow-2xl" />
+</div>
 ---
 
 # H2C, l'imprimante IPPON
